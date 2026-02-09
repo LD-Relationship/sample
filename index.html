@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="animations-container">
+        <div id="hearts-container"></div>
+        <div id="petals-container"></div>
+    </div>
+
+    <!-- Music Control Button -->
+    <button id="music-toggle" class="music-control" aria-label="Toggle Music">
+        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <svg class="pause-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+    </button>
+
+    <!-- Page Indicator -->
+    <div id="page-indicator" class="page-indicator">1/7</div>
+
+    <!-- Audio Element -->
+    <audio id="background-music" loop>
+        <source src="music/romantic-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Container -->
+    <div id="app-container" class="app-container">
+
+        <!-- PAGE 1: HOOK -->
+        <section id="page1" class="page active">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow">
+                    <img src="images/page1_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page1_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page1_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page1_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="text-content">
+                    <h1 class="main-text">Hey Udoka… I made something small for you ❤️</h1>
+                    <h1 class="main-text">click the play button below and then click start</h1>
+                </div>
+                <button class="next-btn" data-next="page2">Start</button>
+            </div>
+        </section>
+
+        <!-- PAGE 2: MEMORY -->
+        <section id="page2" class="page">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow">
+                    <img src="images/page2_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page2_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page2_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page2_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+                <div class="flowers-overlay"></div>
+            </div>
+            <div class="content-container">
+                <div class="text-content">
+                    <h1 class="main-text">Since you came into my life, everything feels different…</h1>
+                </div>
+                <button class="next-btn" data-next="page3">Next</button>
+            </div>
+        </section>
+
+        <!-- PAGE 3: APPRECIATION -->
+        <section id="page3" class="page">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow">
+                    <img src="images/page3_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page3_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page3_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page3_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="text-content">
+                    <h1 class="main-text">Thank you for loving me even when I'm not perfect.</h1>
+                    <p class="quote-text">"In all the world, there is no heart for me like yours."<br>— Maya Angelou</p>
+                </div>
+                <button class="next-btn" data-next="page4">Next</button>
+            </div>
+        </section>
+
+        <!-- PAGE 4: PROMISES -->
+        <section id="page4" class="page">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow slow">
+                    <img src="images/page4_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page4_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page4_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page4_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+                <div class="sparkles-overlay"></div>
+            </div>
+            <div class="content-container">
+                <div class="text-content">
+                    <h1 class="main-text">I promise to choose you… in every season, every mood, every storm.</h1>
+                </div>
+                <button class="next-btn" data-next="page5">Next</button>
+            </div>
+        </section>
+
+        <!-- PAGE 5: FUNNY + REAL -->
+        <section id="page5" class="page">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow">
+                    <img src="images/page5_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page5_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page5_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page5_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="text-content heart-pop">
+                    <h1 class="main-text">I may annoy you… but I'll never stop loving you 😂❤️</h1>
+                </div>
+                <button class="next-btn" data-next="page6">Next</button>
+            </div>
+        </section>
+
+        <!-- PAGE 6: DEEP EMOTIONAL -->
+        <section id="page6" class="page">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow">
+                    <img src="images/page6_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page6_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page6_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page6_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+                <div class="sparkles-overlay"></div>
+            </div>
+            <div class="content-container">
+                <div class="text-content heartbeat">
+                    <h1 class="main-text">If I had one wish, it would be to spend forever with you.</h1>
+                </div>
+                <button class="next-btn" data-next="page7">Next</button>
+            </div>
+        </section>
+
+        <!-- PAGE 7: FINAL LOVE LETTER -->
+        <section id="page7" class="page final-page">
+            <div class="page-background">
+                <div class="gradient-overlay"></div>
+                <div class="photo-slideshow slow">
+                    <img src="images/page7_1.jpg" alt="Memory 1" class="slideshow-img active">
+                    <img src="images/page7_2.jpg" alt="Memory 2" class="slideshow-img">
+                    <img src="images/page7_3.jpg" alt="Memory 3" class="slideshow-img">
+                    <img src="images/page7_4.jpg" alt="Memory 4" class="slideshow-img">
+                </div>
+            </div>
+            <div id="confetti-container"></div>
+            <div class="content-container">
+                <div class="love-letter-card">
+                    <div class="letter-content">
+                        <p>I couldn't buy the whole world…<br>so I made you a small piece of it.</p>
+                        
+                        <p>Loving you is the easiest thing I've ever done.<br>Even on hard days…<br>my heart still chooses you without thinking.</p>
+                        
+                        <p>You've ruined me 😭😂<br>Because now…<br>ordinary love stories don't impress me anymore.<br>You raised the standard.</p>
+                        
+                        <p>You are my favorite thought.<br>My sweetest distraction.<br>My calm in chaos.<br>My soft place to land.</p>
+                        
+                        <p>Every picture of us is proof…<br>that life can be beautiful.<br>And every moment with you…<br>is a memory I want forever.</p>
+                        
+                        <p>If I could pause time,<br>I'd pause it in your arms.<br>Because that's the closest thing to heaven I know.</p>
+                        
+                        <p>So today, I just want to remind you…<br>I love you deeply.<br>I love you loudly.<br>I love you endlessly.</p>
+                        
+                        <p class="final-message">Happy Valentine's Day, my forever ❤️🌹</p>
+                    </div>
+                    <div class="final-buttons">
+                        <button class="action-btn replay-btn" id="replay-btn">🔁 Replay</button>
+                        <button class="action-btn download-btn" id="download-btn">📸 Download Our Memories</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
